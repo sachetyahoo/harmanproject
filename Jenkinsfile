@@ -1,6 +1,11 @@
 pipeline {
     agent any
   stages {
+      stage ('Clone') {
+          steps {
+              sh "git branch: 'main', url: 'https://github.com/sachet94/harmanproject.git'"
+          }
+      }
     stage('Deploy') {
             steps {
                 sshagent(['harman_deploy']) {
