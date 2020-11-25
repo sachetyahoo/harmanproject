@@ -8,7 +8,7 @@ pipeline {
       }
       stage('Packer Image') {
           steps {
-            sh "packer build packer.json"  
+            sh "sudo packer build packer.json"  
           }
       }
   }
