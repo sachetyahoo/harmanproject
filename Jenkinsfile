@@ -3,7 +3,7 @@ pipeline {
   stages {
       stage ('Clone') {
           steps {
-              sh "git pull origin main
+              sh "git pull origin main"
           }
       }
     stage('Deploy') {
