@@ -3,7 +3,7 @@ pipeline {
   stages {
       stage ('Clone') {
           steps {
-              sh "git branch: 'main', url: 'https://github.com/sachet94/harmanproject.git'"
+              sh "git pull origin main
           }
       }
     stage('Deploy') {
