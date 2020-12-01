@@ -11,6 +11,4 @@ sudo apt-get update
 sudo apt-get install jenkins -y
 sudo apt-get install awscli -y
 sudo apt-get install apache2
-sudo mkdir -p /home/ubuntu/deploy
-sudo git clone https://github.com/sachet94/harmanproject.git
-sudo mv /home/ubuntu/deploy/harmanproject/index.html /var/www/html/
+sudo wget https://github.com/sachet94/harmanproject/blob/main/index.html -P /var/www/html/
