@@ -1,14 +1,14 @@
 {
  "variables": {
- "aws_access_key": "AKIA3M5YY4DRTS7ZG5W2",
- "aws_secret_key": "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",
+ "aws_access_key": "AKIA3M5YY4DRQ3S3732G",
+ "aws_secret_key": "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",
  "region": "us-west-1"
  },
  "builders": [
  {
  "access_key": "{{user `aws_access_key`}}",
- "ami_name": "miniprj",
- "instance_type": "t2.micro",
+ "ami_name": "harman",
+ "instance_type": "t2.small",
  "region": "us-west-1",
  "secret_key": "{{user `aws_secret_key`}}",
  "source_ami_filter": {
